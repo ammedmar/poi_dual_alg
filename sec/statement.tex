@@ -1,0 +1,36 @@
+% !TEX root = ../comb_poi_dual.tex
+
+\section{Statement} \label{s:statement}
+
+
+\begin{definition}
+	Let $A$ be a connected commutative algebra of finite type.
+	We say $A$ is a \textit{Poincar\'e duality algebra} of \textit{formal dimension} $d$ if:
+	\begin{enumerate}
+		\item $A_i = 0$ for $i > d$,
+		\item $\dim A_d = 1$,
+		\item $A_i \ot A_{d-i} \to A_d$ is non-degenerate.
+	\end{enumerate}
+\end{definition}
+
+\begin{definition}
+	Let $\ast \colon \chains(\asimplex^{\bn})^{\ot 2} \to \chains(\asimplex^{\bn})$ be the linear defined by
+	\[
+	[v_0, \dots, v_p] \ot [v_{p+1},\dots,v_{m}] \mapsto
+	(-1)^{\sign \pi}[v_{\pi(0)}, \dots, v_{\pi(m)}]
+	\]
+	if for all $i \neq j$ we have $v_i \neq v_j$, where $\pi$ is the permutation ordering the vertices, and it is map to $0$ otherwise.
+\end{definition}
+
+\begin{theorem}
+	For every $\bn \in \asimplex$ the complex $\chains(\asimplex^{\bn})$ together with the product $\ast$ form a Poincar\'e duality algebra of formal dimension $n+1$.
+\end{theorem}
+
+\begin{proof}
+	We start by showing that $\ast$ defines a natural commutative algebra on the connected finite type complex $\chains(\asimplex^{\bn})$.
+	TBW
+\end{proof}
+
+\begin{corollary}
+	For every $\bn \in \asimplex$ the chain complexes $\chains(\asimplex^{\bn})$ and $\sus{n+1}\cochains(\asimplex^{\bn})$ are naturally isomorphic.
+\end{corollary}
